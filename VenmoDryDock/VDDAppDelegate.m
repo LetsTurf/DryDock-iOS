@@ -35,7 +35,7 @@ static NSString * const UpdateCategoryIdentifier = @"update";
 @implementation VDDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [Fabric with:@[CrashlyticsKit]];
+//    [Fabric with:@[CrashlyticsKit]];
     [Parse setApplicationId:VDDParseAppId
                   clientKey:VDDParseClientKey];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
