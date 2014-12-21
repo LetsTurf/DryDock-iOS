@@ -20,8 +20,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-static NSString *const VDDParseAppId = @"";
-static NSString *const VDDParseClientKey = @"";
+static NSString *const VDDParseAppId = @"g8tFfuRyHUehBaFOQ61Xx7KXyCHkDsHAZbLfaL2I";
+static NSString *const VDDParseClientKey = @"b9sb9cyZCquQrJKJaENR2fZYrEoyC0gDAyw0wnVM";
 
 static NSString *const VDDChannelName = @"production";
-static NSString *const VDDBaseUrl = @"https://drydock.classowl.parseapp.com";
+static NSString *const VDDBaseUrl = @"https://drydock-classowl.parseapp.com";
