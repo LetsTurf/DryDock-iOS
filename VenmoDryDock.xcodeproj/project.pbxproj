@@ -318,7 +318,7 @@
 				ORGANIZATIONNAME = "Chris Maddern";
 				TargetAttributes = {
 					83FC5C3F18D4B8A1005A3B3E = {
-						DevelopmentTeam = 3DTT789YMW;
+						DevelopmentTeam = 37F9GCH66E;
 					};
 					B6FBEC41197F6C6500A8C89C = {
 						TestTargetID = 83FC5C3F18D4B8A1005A3B3E;
@@ -597,8 +597,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: IDEO LLC";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VenmoDryDock/Libraries",
@@ -608,7 +608,7 @@
 				INFOPLIST_FILE = "VenmoDryDock/VenmoDryDock-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3544e83a-ec47-4648-9c5c-c8f5024abddd";
+				PROVISIONING_PROFILE = "0b6445db-9566-4d71-8660-c90cf1c65c1d";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -619,8 +619,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: IDEO LLC";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: IDEO LLC";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VenmoDryDock/Libraries",
@@ -630,7 +630,7 @@
 				INFOPLIST_FILE = "VenmoDryDock/VenmoDryDock-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3544e83a-ec47-4648-9c5c-c8f5024abddd";
+				PROVISIONING_PROFILE = "0b6445db-9566-4d71-8660-c90cf1c65c1d";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

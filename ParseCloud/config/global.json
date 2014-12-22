@@ -1,8 +1,8 @@
 {
     "applications": {
         "DryDock": {
-            "applicationId": "", 
-            "masterKey": ""
+            "applicationId": "g8tFfuRyHUehBaFOQ61Xx7KXyCHkDsHAZbLfaL2I", 
+            "masterKey": "3VdH3K7WHofNdiHrZm6QwFTPq1M1dyW3JOJw7YBO"
         }, 
         "_default": {
             "link": "DryDock"
