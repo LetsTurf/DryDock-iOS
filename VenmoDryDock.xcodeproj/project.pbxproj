@@ -608,7 +608,7 @@
 				INFOPLIST_FILE = "VenmoDryDock/VenmoDryDock-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0b6445db-9566-4d71-8660-c90cf1c65c1d";
+				PROVISIONING_PROFILE = "7088afe4-575c-4394-ad67-94bd24f8a324";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
