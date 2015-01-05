@@ -16,6 +16,18 @@
 
     <!-- Include the compiled Ratchet JS -->
     <script src="/ratchet/js/ratchet.min.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+
+      $(function() {
+        $("#install").click(function() {
+          setTimeout(function() {
+            window.location.href = "/appdownload/success";
+          }, 1000);
+        });
+      });
+
+    </script>
   </head>
   <body>
 
@@ -27,7 +39,7 @@
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
     <div class="content">
       <ul class="table-view">
-        <li class="table-view-cell media">
+        <li class="table-view-cell media" id="install">
           <a class="navigate-right" href="<%= install_url %>">
             <img class="media-object pull-left" src="<%= icon_url %>">
             <div class="media-body">

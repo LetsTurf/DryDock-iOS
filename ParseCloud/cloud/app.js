@@ -30,6 +30,10 @@ app.get('/appdownload', function(req, res) {
   return res.render('appdownloadERROR');
 });
 
+app.get('/appdownload/success', function(req, res) {
+  return res.render('appdownloadSUCCESS');
+}); 
+
 app.get('/appdownload/:objectId', function(req, res) {
   var modelAppQuery = new Parse.Query(VDDModelApp);
   modelAppQuery.get(req.params.objectId).then(function(modelApp) {
@@ -41,7 +45,9 @@ app.get('/appdownload/:objectId', function(req, res) {
       renderPackage['version_number'] = modelApp.get('version_number');
       renderPackage['install_url'] = modelApp.get('install_url');
       if (modelApp.get('image')) {
-        renderPackage['icon_url'] = modelApp.get('image').url();
+        imageUrl = modelApp.get('image').url();
+        // imageUrl = imageUrl.replace(/^http:\/\//i, 'https://');
+        renderPackage['icon_url'] = imageUrl;
       } else {
         renderPackage['icon_url'] = "http://files.parsetfss.com/8ea13206-bb1e-43a9-9351-a410a901ac61/tfss-cd12e48a-3526-4884-af28-c16986314992-DryDock_Icon120x120.png";
       }
