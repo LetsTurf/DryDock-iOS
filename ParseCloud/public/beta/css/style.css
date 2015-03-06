@@ -183,6 +183,7 @@ body {
 
 #success {
 	position: relative;
+	font-size: 1.6em;
 }
 
 #success p:nth-child(1) {
