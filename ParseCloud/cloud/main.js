@@ -1,14 +1,13 @@
-
 require('cloud/app.js');
-
+ 
 var VDDModelApp = Parse.Object.extend("VDDModelApp");
-
+ 
 // Use Parse.Cloud.define to define as many cloud functions as you want.
 // For example:
 Parse.Cloud.define("hello", function(request, response) {
   response.success("Hello world!");
 });
-
+ 
 Parse.Cloud.define("buildServerUpdate", function(request, response) {
   console.log(JSON.stringify(request.params));
   var bundleIdentifier = request.params['bundle_identifier'];
@@ -45,7 +44,7 @@ Parse.Cloud.define("buildServerUpdate", function(request, response) {
     return response.error(JSON.stringify(err));
   });
 });
-
+ 
 var getModelApp = function(bundleIdentifier, versionChannel) {
   var modelAppQuery = new Parse.Query(VDDModelApp);
   modelAppQuery.equalTo("bundle_identifier", bundleIdentifier);

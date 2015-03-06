@@ -1,9 +1,8 @@
-
 var VDDModelApp = Parse.Object.extend("VDDModelApp");
-
+ 
 var versionPackageForTrackerRequest = function(bundleIdentifier, channel) {
   var promise = new Parse.Promise();
-
+ 
   var modelAppQuery = new Parse.Query(VDDModelApp);
   modelAppQuery.equalTo("bundle_identifier", bundleIdentifier);
   modelAppQuery.equalTo("version_channel", channel);
@@ -20,8 +19,8 @@ var versionPackageForTrackerRequest = function(bundleIdentifier, channel) {
       promise.resolve(returnPackage);
     }
   });
-
+ 
   return promise;
 };
-
+ 
 module.exports.versionPackageForTrackerRequest = versionPackageForTrackerRequest;

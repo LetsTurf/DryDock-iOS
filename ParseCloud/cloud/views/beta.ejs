@@ -1,0 +1,80 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ 
+<head>
+ 
+<meta charset="utf-8" />
+<title>Turf Beta</title>
+ 
+<!-- Balises meta : SEO -->
+<meta name="author" content="Turf" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+ 
+<!-- Balises meta : Facebook Sharing -->
+<meta property="og:title" content="Turf" /> 
+<meta property="type" content="Landing Page" /> 
+<meta property="og:url" content="http://www.letsturf.com" /> 
+<meta property="og:description" content="" />  
+<meta property="og:image" content="" />
+ 
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/beta/css/style.css">
+ 
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+ 
+</head>
+ 
+    <body>
+ 
+        <header id="head">
+             
+            <p>Welcome to the</p>
+            <p>Turf Beta Community</p>
+        </header>
+ 
+        <div id="download">
+            <p>Tap to install turf</p>
+            <a href="<%= install_url %>" id="install"><img src="/beta/css/img/turf.png"></a>
+            <p>Turf Beta</p>
+            <p>The <span>quick &amp; fun</span> way for you
+               to <span>chat &amp; make plans</span> with your friends, family, teammates, and colleagues.</p>
+        </div>
+ 
+        <div id="bottom">
+            <p>Turf Beta <%= version_number %>(<%= build_number %>)</p>
+        </div>
+ 
+        <div id="circle-box">
+ 
+            <div class="circle" id="circle-1"></div>
+            <div class="circle" id="circle-2"></div>
+            <div class="circle" id="circle-3"></div>
+            <div class="circle" id="circle-4"></div>
+            <div class="circle" id="circle-5"></div>
+            <div class="circle" id="circle-6"></div>
+ 
+        </div>
+         
+    </body>
+ 
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/beta/js/main.js"></script>
+ 
+    <script type="text/javascript">
+ 
+      $(function() {
+        $("#install").click(function() {
+          setTimeout(function() {
+            window.location.href = "/beta/download/success";
+          }, 1000);
+        });
+      });
+ 
+    </script>
+ 
+</html>

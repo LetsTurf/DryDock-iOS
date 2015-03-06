@@ -1,9 +1,8 @@
-
 var VDDModelApp = Parse.Object.extend("VDDModelApp");
-
+ 
 var updateAppFromBuildPackage = function(buildPackage) {
   var promise = new Parse.Promise();
-
+ 
   var jobName = buildPackage.job.name;
   var modelAppQuery = new Parse.Query(VDDModelApp);
   modelAppQuery.equalTo("buildJobName", jobName);
@@ -17,8 +16,8 @@ var updateAppFromBuildPackage = function(buildPackage) {
       return modelApp.save();
     }
   });
-
+ 
   return promise;
 };
-
+ 
 module.exports.updateAppFromBuildPackage = updateAppFromBuildPackage;

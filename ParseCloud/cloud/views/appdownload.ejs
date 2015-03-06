@@ -3,22 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>DryDock</title>
-
+ 
     <!-- Sets initial viewport load and disables zooming  -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-
+ 
     <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
+ 
     <!-- Include the compiled Ratchet CSS -->
     <link href="/ratchet/css/ratchet.min.css" rel="stylesheet">
-
+ 
     <!-- Include the compiled Ratchet JS -->
     <script src="/ratchet/js/ratchet.min.js"></script>
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript">
-
+ 
       $(function() {
         $("#install").click(function() {
           setTimeout(function() {
@@ -26,16 +26,16 @@
           }, 1000);
         });
       });
-
+ 
     </script>
   </head>
   <body>
-
+ 
     <!-- Make sure all your bars are the first things in your <body> -->
     <header class="bar bar-nav">
       <h1 class="title"><%= name %></h1>
     </header>
-
+ 
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
     <div class="content">
       <ul class="table-view">
@@ -56,6 +56,6 @@
       </ul>
       <p class="content-padded">Thanks for downloading <%= name %>! Click above to install the app.</p>
     </div>
-
+ 
   </body>
 </html>
