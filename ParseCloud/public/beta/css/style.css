@@ -3,7 +3,11 @@ body {
 	padding: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #67d7e8;
+	background-color: #716698;
+}
+
+#bravo {
+	background-color: #f1f1f1;
 }
 
 #head {
@@ -53,12 +57,12 @@ body {
 }
 
 #download p:nth-child(1) {
-	padding-top: 10px;
+	padding-top: 20px;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
-	font-weight: 800;
-	color: #489aa7;
-	font-size: 16px;
+	font-weight: 600;
+	color: #716698;
+	font-size: 14px;
 	text-transform: uppercase;
 }
 
@@ -120,6 +124,10 @@ body {
 	color: white;
 	font-size: 14px;
 	margin-left: 15px;
+}
+
+#download p:nth-child(3)#icon-bravo {
+	color:#716698;
 }
 
 #download p:nth-child(3):before {
@@ -187,19 +195,20 @@ body {
 }
 
 #success p:nth-child(1) {
-	padding-top: 75px;
+	padding-top: 90px;
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	color: white;
 	text-align: center;
-	font-family: 'Raleway', sans-serif;
+	color: #716698;
 }
 
 #success p:nth-child(1) span {
-	line-height: 40px;
-	font-size: 16px;
+	line-height: 34px;
+	font-size: 20px;
 	font-weight: 800;
-	text-transform: uppercase;
+	
+
 }
 
 #success p:nth-child(1):before {
